@@ -1,0 +1,24 @@
+{
+	"type": "record",
+	"name": "WeatherRecord",
+	"doc": "Station temperature observations emitted by AvroGenericStationTempYear.",
+	"fields": [
+		{
+			"name": "stationId",
+			"type": "string",
+			"doc": "NCDC station identifier.",
+			"order": "ascending"
+		},
+		{
+			"name": "temperature",
+			"type": "float",
+			"doc": "Measured air temperature in Celsius.",
+			"order": "descending"
+		},
+		{
+			"name": "year",
+			"type": "int",
+			"doc": "Observation year."
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"type": "record",
+	"name": "MaxTemperatureRecord",
+	"doc": "Maximum air temperature recorded per year along with the station id.",
+	"fields": [
+		{
+			"name": "year",
+			"type": "int",
+			"doc": "Observation year (latest year should appear first).",
+			"order": "descending"
+		},
+		{
+			"name": "maxTemperature",
+			"type": "float",
+			"doc": "Maximum temperature (in Celsius) reported in the given year."
+		},
+		{
+			"name": "stationId",
+			"type": "string",
+			"doc": "Station identifier that recorded the maximum temperature."
+		}
+	]
+}
